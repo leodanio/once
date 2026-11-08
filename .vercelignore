@@ -1,0 +1,9 @@
+/.next/
+/node_modules/
+/.git/
+.env*
+!.env.example
+/tests/
+/supabase/
+*.log
+.DS_Store

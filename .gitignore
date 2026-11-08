@@ -1,0 +1,57 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Testing
+/coverage
+
+# Next.js Build Output
+/.next/
+/out/
+
+# Production Builds
+/build
+
+# Environment Files & Secrets (Keep .env.example tracked)
+.env*
+!.env.example
+
+# Vercel Project Metadata & Local Cache
+.vercel
+
+# Supabase CLI Local State & Project Credentials
+supabase/.temp/
+supabase/.branches/
+
+# TypeScript Build Artifacts
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.pem
+
+# IDE & Editor Configurations
+.idea/
+.vscode/
+*.swp
+*.swo
