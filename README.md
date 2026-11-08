@@ -1,6 +1,4 @@
-                                                          # ONCE
-
-Temporary sharing. Nothing more.
+# ONCE
 
 Not everything we share needs to stay available forever.
 
@@ -8,9 +6,7 @@ ONCE is an open-source platform designed to make sharing temporary, simple and s
 
 No accounts. No subscriptions. No unnecessary complexity.
 
-[Visit ONCE](https://oncetool.it/)
-
-Two tools. One idea.
+Visit:        >>>>>>>>>> https://oncetool.it/ <<<<<<<<<<
 
 ## SECRETS
 
@@ -52,11 +48,9 @@ Each visit is counted atomically, ensuring that concurrent requests cannot excee
 ## Why ONCE?
 
 The internet tends to make everything permanent.
-
 ONCE takes a different approach: share what you need, for as long as you need it.
 
 No accounts. No subscriptions. No advertising.
-
 Just two tools built around temporary sharing.
 
 ## Open source
