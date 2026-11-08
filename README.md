@@ -14,7 +14,7 @@ Two tools. One idea.
 
 ## SECRETS
 
-![SECRETS](docs/screenshots/hero-secrets-dark.png)
+![SECRETS](app/docs/screenshots/hero-secrets-dark.png)
 
 Share a message. Let it be read once.
 
@@ -33,7 +33,7 @@ Once opened, the encrypted content is consumed atomically and cannot be retrieve
 
 ## LINK
 
-![LINK](docs/screenshots/hero-links-dark.png)
+![LINK](app/docs/screenshots/hero-links-dark.png)
 
 Share a link. Control how long it lasts.
 

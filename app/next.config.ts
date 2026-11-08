@@ -38,6 +38,7 @@ const COMMON_SECURITY_HEADERS = [
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  outputFileTracingRoot: path.join(__dirname),
   async redirects() {
     return [
       {
