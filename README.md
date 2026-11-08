@@ -1,58 +1,48 @@
 # ONCE
 
-Not everything we share needs to stay available forever.
+[oncetool.it](https://oncetool.it/)
 
-ONCE is an open-source platform designed to make sharing temporary, simple and secure.
+ONCE was built for those who understand that information doesn’t need to exist forever. A tool for temporary communication, controlled access and reduced digital exposure.
 
-No accounts. No subscriptions. No unnecessary complexity.
+No accounts. No identities required. No unnecessary records.
 
-Visit:        >>>>>>>>>> https://oncetool.it/ <<<<<<<<<<
-
-## SECRETS
+## 01 — SECRETS
 
 ![SECRETS](app/docs/screenshots/hero-secrets-dark.png)
 
-Share a message. Let it be read once.
+SECRETS allows you to transmit private text messages protected by client-side encryption. Messages are encrypted in your browser before reaching our infrastructure. The decryption key remains in the link fragment and is never transmitted to our servers.
 
-SECRETS lets you share private text messages that become inaccessible after their first successful opening.
+Operational capabilities
 
-Every message is encrypted directly in your browser before being sent to the server. The decryption key is contained in the link itself and never reaches the server.
+- End-to-end encryption using AES-256-GCM.
+- Optional password protection.
+- Configurable expiration.
+- Single-use message retrieval.
+- Atomic consumption after the first successful opening.
 
-You can:
-- Create encrypted messages without an account.
-- Protect messages with an additional password.
-- Set an expiration time.
-- Share a unique link with the recipient.
-- Allow only one successful reading.
+Once consumed, the encrypted content is overwritten in the database and cannot be retrieved through the application again.
 
-Once opened, the encrypted content is consumed atomically and cannot be retrieved again.
-
-## LINK
+## 02 — LINK
 
 ![LINK](app/docs/screenshots/hero-links-dark.png)
 
-Share a link. Control how long it lasts.
+Control access. Control time.
 
-LINK lets you turn any destination URL into a temporary, shareable link.
+Not every destination needs to remain reachable indefinitely.
 
-Instead of sharing a permanent URL, you decide how long the generated link remains accessible.
+LINK creates temporary access points to existing URLs, allowing you to determine when and how access ends.
 
-You can:
-- Set a maximum number of visits.
-- Choose an expiration time or keep the link active indefinitely.
-- Create custom URLs with your own slug.
-- Define a custom message to display when the link expires or reaches its access limit.
+Operational capabilities
 
-Each visit is counted atomically, ensuring that concurrent requests cannot exceed the configured access limit.
+- Configurable access limits.
+- Automatic expiration.
+- Custom URL slugs.
+- Custom expiration messages.
+- Atomic access counting.
 
-## Why ONCE?
+When the configured conditions are met, the link stops redirecting.
 
-The internet tends to make everything permanent.
-ONCE takes a different approach: share what you need, for as long as you need it.
+Privacy is not a promise of invisibility.  
+It is the deliberate reduction of unnecessary exposure.
 
-No accounts. No subscriptions. No advertising.
-Just two tools built around temporary sharing.
-
-## Open source
-
-ONCE is open source and released under the GNU AGPL-3.0 license.
+## OPEN SOURCE — GNU AGPL-3.0
