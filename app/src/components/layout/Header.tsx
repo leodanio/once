@@ -15,6 +15,7 @@ export function Header() {
   const pathname = usePathname();
   const isSecretsActive = pathname === "/";
   const isLinksActive = pathname === "/links";
+  const isFilesActive = pathname === "/files" || pathname.startsWith("/files/");
 
   const handleNavClick =
     (href: string) => (event: MouseEvent<HTMLAnchorElement>) => {
@@ -52,6 +53,20 @@ export function Header() {
           className={cn(HEADER_ITEM_CLASS)}
         >
           {t.meta.links}
+        </Link>
+
+        <span
+          className="h-3.5 w-px bg-border select-none"
+          aria-hidden="true"
+        />
+
+        <Link
+          href="/files"
+          onClick={handleNavClick("/files")}
+          aria-current={isFilesActive ? "page" : undefined}
+          className={cn(HEADER_ITEM_CLASS)}
+        >
+          {t.meta.files}
         </Link>
       </nav>
     </header>

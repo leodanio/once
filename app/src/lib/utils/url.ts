@@ -26,6 +26,8 @@ export const RESERVED_SLUGS = new Set([
   "secret",
   "link",
   "links",
+  "files",
+  "file",
   "edulink",
   "terms",
   "privacy",

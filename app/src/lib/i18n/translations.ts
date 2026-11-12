@@ -14,6 +14,7 @@ export interface Dictionary {
     footerNavAriaLabel: string;
     links: string;
     secrets: string;
+    files: string;
     about: string;
     github: string;
     switchThemeToLight: string;
@@ -146,6 +147,74 @@ export interface Dictionary {
     secretsParagraph3: string;
     secretsParagraph4: string;
   };
+  files: {
+    title: string;
+    subtitle: string;
+    tabSend: string;
+    tabRequest: string;
+    send: {
+      dragDropNotice: string;
+      maxSizeNotice: string;
+      expiration: string;
+      maxDownloads: string;
+      passwordLabel: string;
+      passwordPlaceholder: string;
+      uploading: string;
+      generateButton: string;
+      linkCreated: string;
+      linkWarning: string;
+      copyLink: string;
+      copied: string;
+    };
+    request: {
+      titleLabel: string;
+      titlePlaceholder: string;
+      maxFilesLabel: string;
+      maxFileSizeLabel: string;
+      expirationLabel: string;
+      generateButton: string;
+      creatingButton: string;
+      requestCreated: string;
+      publicLinkLabel: string;
+      ownerLinkLabel: string;
+      ownerWarning: string;
+      copyLink: string;
+      copied: string;
+    };
+    download: {
+      title: string;
+      subtitle: string;
+      downloadButton: string;
+      downloading: string;
+      passwordRequired: string;
+      passwordPlaceholder: string;
+      passwordSubmit: string;
+      wrongPassword: string;
+      expiredTitle: string;
+      expiredDescription: string;
+      downloadSuccess: string;
+    };
+    guest: {
+      title: string;
+      subtitle: string;
+      fingerprintVerified: string;
+      fingerprintMismatch: string;
+      uploadButton: string;
+      uploading: string;
+      uploadSuccess: string;
+      closedOrExpired: string;
+    };
+    manage: {
+      title: string;
+      receivedFiles: string;
+      noFiles: string;
+      downloadFile: string;
+      deleteFile: string;
+      closeRequest: string;
+      closing: string;
+      requestClosed: string;
+    };
+  };
 }
 
 export const translations: Record<Locale, Dictionary> = {
@@ -156,6 +225,7 @@ export const translations: Record<Locale, Dictionary> = {
       footerNavAriaLabel: "Footer navigation",
       links: "Link",
       secrets: "Secrets",
+      files: "Files",
       about: "ONCE",
       github: "GitHub",
       switchThemeToLight: "Switch to light mode",
@@ -360,6 +430,77 @@ export const translations: Record<Locale, Dictionary> = {
       secretsParagraph4:
         "The goal is to ensure that the server can manage and distribute messages without having access to their original content.",
     },
+    files: {
+      title: "Files.",
+      subtitle:
+        "End-to-end encrypted file sharing and zero-knowledge file requests.",
+      tabSend: "Send",
+      tabRequest: "Request",
+      send: {
+        dragDropNotice: "Drag and drop a file, or click to browse",
+        maxSizeNotice: "Up to 45 MB • AES-256-GCM chunked encryption",
+        expiration: "Expiration",
+        maxDownloads: "Download authorizations",
+        passwordLabel: "Password protection",
+        passwordPlaceholder: "Enter optional password...",
+        uploading: "Encrypting & uploading...",
+        generateButton: "Send File",
+        linkCreated: "File link ready",
+        linkWarning:
+          "Save this link now. It contains the decryption key in the fragment and is never stored on the server.",
+        copyLink: "Copy Link",
+        copied: "Copied",
+      },
+      request: {
+        titleLabel: "Request title",
+        titlePlaceholder: "e.g. Identity documents, contract...",
+        maxFilesLabel: "Max files",
+        maxFileSizeLabel: "Max file size",
+        expirationLabel: "Expiration",
+        generateButton: "Create Request",
+        creatingButton: "Creating request...",
+        requestCreated: "File request ready",
+        publicLinkLabel: "Public upload link (share with guest)",
+        ownerLinkLabel: "Private management link (keep secret)",
+        ownerWarning:
+          "Keep your management link safe. It contains your private ECDH key to decrypt uploaded files.",
+        copyLink: "Copy Link",
+        copied: "Copied",
+      },
+      download: {
+        title: "Download file",
+        subtitle: "This file is protected with end-to-end client-side encryption.",
+        downloadButton: "Download & Decrypt",
+        downloading: "Decrypting file...",
+        passwordRequired: "This file is password-protected. Enter the password below.",
+        passwordPlaceholder: "Enter password...",
+        passwordSubmit: "Verify & Download",
+        wrongPassword: "Decryption failed: incorrect password.",
+        expiredTitle: "File unavailable",
+        expiredDescription: "This transfer has expired or reached its maximum download limit.",
+        downloadSuccess: "File downloaded and decrypted successfully.",
+      },
+      guest: {
+        title: "Upload file",
+        subtitle: "The file will be encrypted in your browser before upload.",
+        fingerprintVerified: "Creator key authenticated via URL fingerprint",
+        fingerprintMismatch: "CRITICAL: Public key fingerprint mismatch! Do not upload.",
+        uploadButton: "Encrypt & Upload File",
+        uploading: "Encrypting and uploading file...",
+        uploadSuccess: "File encrypted and uploaded successfully.",
+        closedOrExpired: "This file request is closed or has expired.",
+      },
+      manage: {
+        title: "Manage File Request",
+        receivedFiles: "Received files",
+        noFiles: "No files received yet.",
+        downloadFile: "Download",
+        deleteFile: "Delete",
+        closeRequest: "Close Request",
+        closing: "Closing...",
+        requestClosed: "This request has been permanently closed.",
+      },
+    },
   },
   it: {
     meta: {
@@ -368,6 +509,7 @@ export const translations: Record<Locale, Dictionary> = {
       footerNavAriaLabel: "Navigazione piè di pagina",
       links: "Link",
       secrets: "Segreti",
+      files: "Files",
       about: "ONCE",
       github: "GitHub",
       switchThemeToLight: "Passa al tema chiaro",
@@ -574,6 +716,77 @@ export const translations: Record<Locale, Dictionary> = {
         "Il destinatario può richiedere la visualizzazione del messaggio una sola volta. Il server verifica la disponibilità del segreto e ne registra atomicamente il consumo prima di restituire il contenuto cifrato, che viene decifrato localmente nel browser. È inoltre prevista la possibilità di aggiungere una protezione tramite password e una scadenza temporale.",
       secretsParagraph4:
         "L’obiettivo è fare in modo che il server possa gestire e distribuire i messaggi senza avere accesso al loro contenuto originale.",
+    },
+    files: {
+      title: "File.",
+      subtitle:
+        "Condivisione di file con cifratura end-to-end e richieste file zero-knowledge.",
+      tabSend: "Invia",
+      tabRequest: "Richiedi",
+      send: {
+        dragDropNotice: "Trascina qui il file, oppure clicca per selezionarlo",
+        maxSizeNotice: "Fino a 45 MB • Cifratura a chunk AES-256-GCM",
+        expiration: "Scadenza",
+        maxDownloads: "Autorizzazioni di download",
+        passwordLabel: "Proteggi con password",
+        passwordPlaceholder: "Inserisci password opzionale...",
+        uploading: "Cifratura e caricamento...",
+        generateButton: "Invia File",
+        linkCreated: "Link del file pronto",
+        linkWarning:
+          "Conserva questo link adesso. Contiene la chiave di decifratura nel frammento e non è salvato sul server.",
+        copyLink: "Copia Link",
+        copied: "Copiato",
+      },
+      request: {
+        titleLabel: "Titolo della richiesta",
+        titlePlaceholder: "es. Documenti d'identità, contratto...",
+        maxFilesLabel: "Numero massimo di file",
+        maxFileSizeLabel: "Dimensione massima per file",
+        expirationLabel: "Scadenza",
+        generateButton: "Crea Richiesta",
+        creatingButton: "Creazione in corso...",
+        requestCreated: "Richiesta file creata",
+        publicLinkLabel: "Link pubblico (condividi con chi deve caricare)",
+        ownerLinkLabel: "Link privato di gestione (conserva con cura)",
+        ownerWarning:
+          "Conserva il link di gestione al sicuro. Contiene la tua chiave privata ECDH necessaria per decifrare i file ricevuti.",
+        copyLink: "Copia Link",
+        copied: "Copiato",
+      },
+      download: {
+        title: "Scarica file",
+        subtitle: "Questo file è protetto da cifratura end-to-end client-side.",
+        downloadButton: "Scarica e Decifra",
+        downloading: "Decifratura in corso...",
+        passwordRequired: "Questo file è protetto da password. Inseriscila per procedere.",
+        passwordPlaceholder: "Inserisci password...",
+        passwordSubmit: "Verifica e Scarica",
+        wrongPassword: "Decifratura fallita: password errata.",
+        expiredTitle: "File non disponibile",
+        expiredDescription: "Questo trasferimento è scaduto o ha raggiunto il limite massimo di download.",
+        downloadSuccess: "File scaricato e decifrato con successo.",
+      },
+      guest: {
+        title: "Carica file",
+        subtitle: "Il file verrà cifrato direttamente nel tuo browser prima dell'invio.",
+        fingerprintVerified: "Chiave del destinatario autenticata tramite fingerprint",
+        fingerprintMismatch: "ATTENZIONE: Il fingerprint della chiave pubblica non corrisponde! Non caricare file.",
+        uploadButton: "Cifra e Carica File",
+        uploading: "Cifratura e caricamento in corso...",
+        uploadSuccess: "File cifrato e inviato con successo.",
+        closedOrExpired: "Questa richiesta di file è chiusa o scaduta.",
+      },
+      manage: {
+        title: "Gestione Richiesta File",
+        receivedFiles: "File ricevuti",
+        noFiles: "Nessun file ancora ricevuto.",
+        downloadFile: "Scarica",
+        deleteFile: "Elimina",
+        closeRequest: "Chiudi Richiesta",
+        closing: "Chiusura in corso...",
+        requestClosed: "Questa richiesta è stata definitivamente chiusa.",
+      },
     },
   },
 };

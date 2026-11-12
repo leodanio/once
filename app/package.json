@@ -13,7 +13,7 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "test": "node --import ./tests/register-alias.mjs --test tests/once.test.ts"
+    "test": "node --import ./tests/register-alias.mjs --test tests/once.test.ts tests/files.test.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "2.119.0",
